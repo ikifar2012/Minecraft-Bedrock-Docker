@@ -8,4 +8,4 @@ RUN unzip bedrock-server-${MC_VER}.zip
 #######################################################
 EXPOSE 19132:19132/tcp
 ENV LD_LIBRARY_PATH=.
-CMD ./bedrock_server
+ENTRYPOINT [ "./bedrock_server" ]
